@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 x1 = float(input("Enter the starting coordinate of X: "))
 y1 = float(input("Enter the starting coordinate of Y: "))
 x2 = float(input("Enter the ending coordinate of X: "))
@@ -26,3 +28,12 @@ else:
         rx = round(x, 2)
         ry = round(y, 2)
         print(f"x = {rx:.2f}, y = {ry:.2f}")
+
+xp,yp = zip(*points)
+
+plt.plot(xp, yp, marker='o', linestyle='-')
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.title('DDA Algorithm')
+plt.grid(True)
+plt.show()
