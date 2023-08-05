@@ -12,12 +12,15 @@ y = y1
 
 print("\n The Points are:")
 
+points = []
+
 if m <= 1:
     while round(x, 2) != x2 and round(y, 2) != y2:
         x = x + 1
         y = y + m
         rx = round(x, 2)
         ry = round(y, 2)
+        points.append((rx,ry))
         print(f"x = {rx:.2f}, y = {ry:.2f}")
 else:
     while round(x, 2) != x2 and round(y, 2) != y2:
@@ -25,4 +28,5 @@ else:
         x = x + 1 / m
         rx = round(x, 2)
         ry = round(y, 2)
+        points.append((rx,ry))
         print(f"x = {rx:.2f}, y = {ry:.2f}")
