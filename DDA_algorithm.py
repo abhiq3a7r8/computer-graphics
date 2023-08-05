@@ -12,7 +12,7 @@ y = y1
 
 print("\n The Points are:")
 
-if m <= 1:
+if abs(m) <= 1:
     while round(x, 2) != x2 and round(y, 2) != y2:
         x = x + 1
         y = y + m
