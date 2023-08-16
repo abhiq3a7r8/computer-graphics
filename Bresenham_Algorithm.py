@@ -13,6 +13,8 @@ y = y1
 
 points = []
 
+//test merge 1
+
 while x != x2:
     if d<0:
         d = d + 2*dy
