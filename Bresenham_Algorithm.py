@@ -12,7 +12,8 @@ x = x1
 y = y1
 
 points = []
-//test 2 merge
+
+//test merge 1
 
 while x != x2:
     if d<0:
